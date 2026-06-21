@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27037f052493981c225eeafdf10bf75b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_27037f052493981c225eeafdf10bf75b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_27037f052493981c225eeafdf10bf75b = L.map(
+                "map_27037f052493981c225eeafdf10bf75b",
+                {
+                    center: [-38.41, -63.61],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eed07d52948c9d21c5e0ecd66c8a60a2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eed07d52948c9d21c5e0ecd66c8a60a2.addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var marker_e1e62b7c355aa024570ddf4453186052 = L.marker(
+                [-24.2, -65.3],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_31f3b4d8a16d710e4cf6799203a56fa9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc33d6c1dcb9ca9d488612bd54d49e85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfdb25c22c573995f9087232cdf8ff27 = $(`<div id="html_bfdb25c22c573995f9087232cdf8ff27" style="width: 100.0%; height: 100.0%;"><b>Nodo: Jujuy</b><br>Oferta Min: 163.0 W<br>Autonomia Sugerida: 1 dias<br>Estado: SEGURO</div>`)[0];
+                popup_dc33d6c1dcb9ca9d488612bd54d49e85.setContent(html_bfdb25c22c573995f9087232cdf8ff27);
+            
+        
+
+        marker_e1e62b7c355aa024570ddf4453186052.bindPopup(popup_dc33d6c1dcb9ca9d488612bd54d49e85)
+        ;
+
+        
+    
+    
+                marker_e1e62b7c355aa024570ddf4453186052.setIcon(icon_31f3b4d8a16d710e4cf6799203a56fa9);
+            
+    
+            var marker_9d45032fd1bb57ab250b6b88ebc79326 = L.marker(
+                [-24.8, -65.4],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_8cdb8e074a21929e39cfb6cc718dd037 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_060450508034f5bdea422150b9b0381d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2f314827c5d201c55c01ed3a66368a0 = $(`<div id="html_c2f314827c5d201c55c01ed3a66368a0" style="width: 100.0%; height: 100.0%;"><b>Nodo: Salta</b><br>Oferta Min: 163.0 W<br>Autonomia Sugerida: 1 dias<br>Estado: SEGURO</div>`)[0];
+                popup_060450508034f5bdea422150b9b0381d.setContent(html_c2f314827c5d201c55c01ed3a66368a0);
+            
+        
+
+        marker_9d45032fd1bb57ab250b6b88ebc79326.bindPopup(popup_060450508034f5bdea422150b9b0381d)
+        ;
+
+        
+    
+    
+                marker_9d45032fd1bb57ab250b6b88ebc79326.setIcon(icon_8cdb8e074a21929e39cfb6cc718dd037);
+            
+    
+            var marker_aa70556de3f1e692bed349367904a516 = L.marker(
+                [-24.22, -66.32],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_989883b904a8d37bec613d698e308503 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fba29861d5b9d54d5aa5b36ee9685644 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5e207c84759e25ad679038b755652ef = $(`<div id="html_f5e207c84759e25ad679038b755652ef" style="width: 100.0%; height: 100.0%;"><b>Nodo: San Antonio de los Cobres</b><br>Oferta Min: 188.8 W<br>Autonomia Sugerida: 1 dias<br>Estado: SEGURO</div>`)[0];
+                popup_fba29861d5b9d54d5aa5b36ee9685644.setContent(html_f5e207c84759e25ad679038b755652ef);
+            
+        
+
+        marker_aa70556de3f1e692bed349367904a516.bindPopup(popup_fba29861d5b9d54d5aa5b36ee9685644)
+        ;
+
+        
+    
+    
+                marker_aa70556de3f1e692bed349367904a516.setIcon(icon_989883b904a8d37bec613d698e308503);
+            
+    
+            var marker_eeab7961a0579a36aecebb5f97baa0b2 = L.marker(
+                [-26.2, -58.2],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_23bff7382a4f415a407158155622d6cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f56afc460678ab989d3feec03ca551f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ad15d21513167d2084bfd6c2529959e = $(`<div id="html_6ad15d21513167d2084bfd6c2529959e" style="width: 100.0%; height: 100.0%;"><b>Nodo: Formosa</b><br>Oferta Min: 114.2 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_2f56afc460678ab989d3feec03ca551f.setContent(html_6ad15d21513167d2084bfd6c2529959e);
+            
+        
+
+        marker_eeab7961a0579a36aecebb5f97baa0b2.bindPopup(popup_2f56afc460678ab989d3feec03ca551f)
+        ;
+
+        
+    
+    
+                marker_eeab7961a0579a36aecebb5f97baa0b2.setIcon(icon_23bff7382a4f415a407158155622d6cd);
+            
+    
+            var marker_e769ced69529b0d49d1419cc827cf134 = L.marker(
+                [-27.5, -59.0],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_63533c2f95bf7f6b0b3da4a0833d1498 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc08f5c077eaa753f5aa7a7db8efa9df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de9b53284b23dac97df0a799f96a2958 = $(`<div id="html_de9b53284b23dac97df0a799f96a2958" style="width: 100.0%; height: 100.0%;"><b>Nodo: Chaco</b><br>Oferta Min: 112.5 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_fc08f5c077eaa753f5aa7a7db8efa9df.setContent(html_de9b53284b23dac97df0a799f96a2958);
+            
+        
+
+        marker_e769ced69529b0d49d1419cc827cf134.bindPopup(popup_fc08f5c077eaa753f5aa7a7db8efa9df)
+        ;
+
+        
+    
+    
+                marker_e769ced69529b0d49d1419cc827cf134.setIcon(icon_63533c2f95bf7f6b0b3da4a0833d1498);
+            
+    
+            var marker_5816585faa27df5cda9bd2becad17f3c = L.marker(
+                [-27.8, -64.3],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_814cc99f3a1108e7649e0b992ee4f461 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9525f209b817b0bb574a45910af6794 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e03099a56ac197b982589cde820b9919 = $(`<div id="html_e03099a56ac197b982589cde820b9919" style="width: 100.0%; height: 100.0%;"><b>Nodo: Santiago del Estero</b><br>Oferta Min: 120.4 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_d9525f209b817b0bb574a45910af6794.setContent(html_e03099a56ac197b982589cde820b9919);
+            
+        
+
+        marker_5816585faa27df5cda9bd2becad17f3c.bindPopup(popup_d9525f209b817b0bb574a45910af6794)
+        ;
+
+        
+    
+    
+                marker_5816585faa27df5cda9bd2becad17f3c.setIcon(icon_814cc99f3a1108e7649e0b992ee4f461);
+            
+    
+            var marker_f2a72ff0b2e69388bba03a819a8226d8 = L.marker(
+                [-27.37, -55.9],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_d408a46ccd3b32791350e6ff3c0bcaf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e889f2d0b69f2c39ca2417e7a8802151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2db4717abe33343e161e74270560b5d0 = $(`<div id="html_2db4717abe33343e161e74270560b5d0" style="width: 100.0%; height: 100.0%;"><b>Nodo: Posadas</b><br>Oferta Min: 111.7 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_e889f2d0b69f2c39ca2417e7a8802151.setContent(html_2db4717abe33343e161e74270560b5d0);
+            
+        
+
+        marker_f2a72ff0b2e69388bba03a819a8226d8.bindPopup(popup_e889f2d0b69f2c39ca2417e7a8802151)
+        ;
+
+        
+    
+    
+                marker_f2a72ff0b2e69388bba03a819a8226d8.setIcon(icon_d408a46ccd3b32791350e6ff3c0bcaf9);
+            
+    
+            var marker_e05735841270934872c5fa4a7dc7901d = L.marker(
+                [-22.1, -65.6],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_1102c997b689b0896f1392f9aa40a634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7442f8bcc59c9822e1215de23e0e68d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c417768610ec42fa13308cfda41d04a = $(`<div id="html_1c417768610ec42fa13308cfda41d04a" style="width: 100.0%; height: 100.0%;"><b>Nodo: La Quiaca</b><br>Oferta Min: 204.4 W<br>Autonomia Sugerida: 1 dias<br>Estado: SEGURO</div>`)[0];
+                popup_d7442f8bcc59c9822e1215de23e0e68d.setContent(html_1c417768610ec42fa13308cfda41d04a);
+            
+        
+
+        marker_e05735841270934872c5fa4a7dc7901d.bindPopup(popup_d7442f8bcc59c9822e1215de23e0e68d)
+        ;
+
+        
+    
+    
+                marker_e05735841270934872c5fa4a7dc7901d.setIcon(icon_1102c997b689b0896f1392f9aa40a634);
+            
+    
+            var marker_802d5df97e6d42c67c82ed7bcee7edd0 = L.marker(
+                [-31.5, -68.5],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_68a653238649baba089e53ec19443075 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae017a8fdaf4620394bf2ceec4218b1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1e43b24909b74d1b1d8f30e8dfbfaed = $(`<div id="html_d1e43b24909b74d1b1d8f30e8dfbfaed" style="width: 100.0%; height: 100.0%;"><b>Nodo: San Juan</b><br>Oferta Min: 134.3 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_ae017a8fdaf4620394bf2ceec4218b1b.setContent(html_d1e43b24909b74d1b1d8f30e8dfbfaed);
+            
+        
+
+        marker_802d5df97e6d42c67c82ed7bcee7edd0.bindPopup(popup_ae017a8fdaf4620394bf2ceec4218b1b)
+        ;
+
+        
+    
+    
+                marker_802d5df97e6d42c67c82ed7bcee7edd0.setIcon(icon_68a653238649baba089e53ec19443075);
+            
+    
+            var marker_dcd8f9cd7719ac4f6965014feb3e7d30 = L.marker(
+                [-32.9, -68.8],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_a7d76109bb0882482fa8770e27c8cb3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5fbf732d9168d104511bf67db2f3e54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7aa862aad0dc4d53e83e287106a6dc48 = $(`<div id="html_7aa862aad0dc4d53e83e287106a6dc48" style="width: 100.0%; height: 100.0%;"><b>Nodo: Mendoza</b><br>Oferta Min: 125.3 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_a5fbf732d9168d104511bf67db2f3e54.setContent(html_7aa862aad0dc4d53e83e287106a6dc48);
+            
+        
+
+        marker_dcd8f9cd7719ac4f6965014feb3e7d30.bindPopup(popup_a5fbf732d9168d104511bf67db2f3e54)
+        ;
+
+        
+    
+    
+                marker_dcd8f9cd7719ac4f6965014feb3e7d30.setIcon(icon_a7d76109bb0882482fa8770e27c8cb3c);
+            
+    
+            var marker_b81558dcb3871e59d73b5c248a247bce = L.marker(
+                [-29.41, -66.85],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_dbad85ef7e4c3058bf5596e2156c7f99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdc0a1fd4280ad7658ea4f5744e11e2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_591ba2b5daf8011916f8bb25bdedb95d = $(`<div id="html_591ba2b5daf8011916f8bb25bdedb95d" style="width: 100.0%; height: 100.0%;"><b>Nodo: La Rioja</b><br>Oferta Min: 134.0 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_fdc0a1fd4280ad7658ea4f5744e11e2a.setContent(html_591ba2b5daf8011916f8bb25bdedb95d);
+            
+        
+
+        marker_b81558dcb3871e59d73b5c248a247bce.bindPopup(popup_fdc0a1fd4280ad7658ea4f5744e11e2a)
+        ;
+
+        
+    
+    
+                marker_b81558dcb3871e59d73b5c248a247bce.setIcon(icon_dbad85ef7e4c3058bf5596e2156c7f99);
+            
+    
+            var marker_b630b236e6c8d0297866c6de438646f0 = L.marker(
+                [-35.47, -69.58],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_b4ce3ec6271d07adb2e9ed275d69a807 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0be828287392ff306ccd69e590240413 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9f5292e965db21f50a70d3c19310241 = $(`<div id="html_d9f5292e965db21f50a70d3c19310241" style="width: 100.0%; height: 100.0%;"><b>Nodo: Malargue</b><br>Oferta Min: 99.9 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_0be828287392ff306ccd69e590240413.setContent(html_d9f5292e965db21f50a70d3c19310241);
+            
+        
+
+        marker_b630b236e6c8d0297866c6de438646f0.bindPopup(popup_0be828287392ff306ccd69e590240413)
+        ;
+
+        
+    
+    
+                marker_b630b236e6c8d0297866c6de438646f0.setIcon(icon_b4ce3ec6271d07adb2e9ed275d69a807);
+            
+    
+            var marker_e0355e794c9266f31418e2fbbf4e87e0 = L.marker(
+                [-31.4, -64.2],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_b3bcd4e0546066e656f43ea8bb46faf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c722dc5c321a27573220fac458604186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2465bd332dc99adece51f8f7f3530f8 = $(`<div id="html_d2465bd332dc99adece51f8f7f3530f8" style="width: 100.0%; height: 100.0%;"><b>Nodo: Cordoba</b><br>Oferta Min: 121.3 W<br>Autonomia Sugerida: 2 dias<br>Estado: SEGURO</div>`)[0];
+                popup_c722dc5c321a27573220fac458604186.setContent(html_d2465bd332dc99adece51f8f7f3530f8);
+            
+        
+
+        marker_e0355e794c9266f31418e2fbbf4e87e0.bindPopup(popup_c722dc5c321a27573220fac458604186)
+        ;
+
+        
+    
+    
+                marker_e0355e794c9266f31418e2fbbf4e87e0.setIcon(icon_b3bcd4e0546066e656f43ea8bb46faf2);
+            
+    
+            var marker_d3176036b9cf63adc1704f16f756d258 = L.marker(
+                [-31.6, -60.7],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_1e34c29f4b37a9c56bb2f73e27a3f36f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8be0c52818f7191744974d9af93357e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ab3c32c4df0aae206f93b7d1763169 = $(`<div id="html_23ab3c32c4df0aae206f93b7d1763169" style="width: 100.0%; height: 100.0%;"><b>Nodo: Santa Fe</b><br>Oferta Min: 107.7 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_e8be0c52818f7191744974d9af93357e.setContent(html_23ab3c32c4df0aae206f93b7d1763169);
+            
+        
+
+        marker_d3176036b9cf63adc1704f16f756d258.bindPopup(popup_e8be0c52818f7191744974d9af93357e)
+        ;
+
+        
+    
+    
+                marker_d3176036b9cf63adc1704f16f756d258.setIcon(icon_1e34c29f4b37a9c56bb2f73e27a3f36f);
+            
+    
+            var marker_9ebd9b0072b7dcf61566bbb1b4e49b5d = L.marker(
+                [-32.95, -60.66],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_b3815749ca3b3da81a00ae9b5f3e7deb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06c39b531520cfbc2cc6db89d5b47202 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2f320636b3212f4bbf0c776f3c267ab = $(`<div id="html_c2f320636b3212f4bbf0c776f3c267ab" style="width: 100.0%; height: 100.0%;"><b>Nodo: Rosario</b><br>Oferta Min: 104.5 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_06c39b531520cfbc2cc6db89d5b47202.setContent(html_c2f320636b3212f4bbf0c776f3c267ab);
+            
+        
+
+        marker_9ebd9b0072b7dcf61566bbb1b4e49b5d.bindPopup(popup_06c39b531520cfbc2cc6db89d5b47202)
+        ;
+
+        
+    
+    
+                marker_9ebd9b0072b7dcf61566bbb1b4e49b5d.setIcon(icon_b3815749ca3b3da81a00ae9b5f3e7deb);
+            
+    
+            var marker_ae213e3ce361504a56ed6b09b11ed550 = L.marker(
+                [-34.6, -58.4],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_d76257a9e465b5316d86a868f629c6b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa2a4e69fe57d4949237bfa31a10387c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_710c6ca66cd217e427669d0f7e7f1eb3 = $(`<div id="html_710c6ca66cd217e427669d0f7e7f1eb3" style="width: 100.0%; height: 100.0%;"><b>Nodo: AMBA</b><br>Oferta Min: 95.0 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_aa2a4e69fe57d4949237bfa31a10387c.setContent(html_710c6ca66cd217e427669d0f7e7f1eb3);
+            
+        
+
+        marker_ae213e3ce361504a56ed6b09b11ed550.bindPopup(popup_aa2a4e69fe57d4949237bfa31a10387c)
+        ;
+
+        
+    
+    
+                marker_ae213e3ce361504a56ed6b09b11ed550.setIcon(icon_d76257a9e465b5316d86a868f629c6b7);
+            
+    
+            var marker_ce89116dce77eaac4353bc67ca97bb6d = L.marker(
+                [-38.0, -57.55],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_6e491e8ee04827e57091bbcd152dc111 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d699fd55f04c7c557a35254d67181467 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c70d6454ae06d72c7e57037612203dd = $(`<div id="html_4c70d6454ae06d72c7e57037612203dd" style="width: 100.0%; height: 100.0%;"><b>Nodo: Mar del Plata</b><br>Oferta Min: 83.1 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_d699fd55f04c7c557a35254d67181467.setContent(html_4c70d6454ae06d72c7e57037612203dd);
+            
+        
+
+        marker_ce89116dce77eaac4353bc67ca97bb6d.bindPopup(popup_d699fd55f04c7c557a35254d67181467)
+        ;
+
+        
+    
+    
+                marker_ce89116dce77eaac4353bc67ca97bb6d.setIcon(icon_6e491e8ee04827e57091bbcd152dc111);
+            
+    
+            var marker_3be592baa93c83a4aa10e2dbac34e9e7 = L.marker(
+                [-38.0, -61.5],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_0a186d8e706761c43c3d9fb9bd3baa33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfa9edf36aeff5c94f174186435a1b7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7eb87209b72ecf0903aa48730e823ee = $(`<div id="html_e7eb87209b72ecf0903aa48730e823ee" style="width: 100.0%; height: 100.0%;"><b>Nodo: Buenos Aires Sur</b><br>Oferta Min: 87.2 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_dfa9edf36aeff5c94f174186435a1b7c.setContent(html_e7eb87209b72ecf0903aa48730e823ee);
+            
+        
+
+        marker_3be592baa93c83a4aa10e2dbac34e9e7.bindPopup(popup_dfa9edf36aeff5c94f174186435a1b7c)
+        ;
+
+        
+    
+    
+                marker_3be592baa93c83a4aa10e2dbac34e9e7.setIcon(icon_0a186d8e706761c43c3d9fb9bd3baa33);
+            
+    
+            var marker_e5657318f8544770d84c79b4583cc640 = L.marker(
+                [-36.62, -64.29],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_88e9e306dc59b1e1d546969f3c63f9b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb345d61c6b1cc4184ae610faa7a7c75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8215dcfd3e15e9ec93d76d79e242cbe = $(`<div id="html_e8215dcfd3e15e9ec93d76d79e242cbe" style="width: 100.0%; height: 100.0%;"><b>Nodo: La Pampa</b><br>Oferta Min: 93.5 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_bb345d61c6b1cc4184ae610faa7a7c75.setContent(html_e8215dcfd3e15e9ec93d76d79e242cbe);
+            
+        
+
+        marker_e5657318f8544770d84c79b4583cc640.bindPopup(popup_bb345d61c6b1cc4184ae610faa7a7c75)
+        ;
+
+        
+    
+    
+                marker_e5657318f8544770d84c79b4583cc640.setIcon(icon_88e9e306dc59b1e1d546969f3c63f9b3);
+            
+    
+            var marker_ab0fc95b11308ee3d3641a0db6cc5cc9 = L.marker(
+                [-38.95, -68.06],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_c88c928af64b1edd8c3116140f4d62f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f762134f8b11103183fa90920257b50c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_257cd4b59a18174e3441ea700d18984d = $(`<div id="html_257cd4b59a18174e3441ea700d18984d" style="width: 100.0%; height: 100.0%;"><b>Nodo: Neuquen</b><br>Oferta Min: 82.6 W<br>Autonomia Sugerida: 3 dias<br>Estado: SEGURO</div>`)[0];
+                popup_f762134f8b11103183fa90920257b50c.setContent(html_257cd4b59a18174e3441ea700d18984d);
+            
+        
+
+        marker_ab0fc95b11308ee3d3641a0db6cc5cc9.bindPopup(popup_f762134f8b11103183fa90920257b50c)
+        ;
+
+        
+    
+    
+                marker_ab0fc95b11308ee3d3641a0db6cc5cc9.setIcon(icon_c88c928af64b1edd8c3116140f4d62f6);
+            
+    
+            var marker_d146b362e3a9cbfe97b1c8e945b1cf05 = L.marker(
+                [-41.13, -71.31],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_3a410135d71b83c25d37f448f253211d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c75a1fd385f5cfb1a18294e1546c3b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_607707cfc5b693410752fbd0a196802e = $(`<div id="html_607707cfc5b693410752fbd0a196802e" style="width: 100.0%; height: 100.0%;"><b>Nodo: Bariloche</b><br>Oferta Min: 57.3 W<br>Autonomia Sugerida: 4 dias<br>Estado: RIESGO_ALTO</div>`)[0];
+                popup_5c75a1fd385f5cfb1a18294e1546c3b0.setContent(html_607707cfc5b693410752fbd0a196802e);
+            
+        
+
+        marker_d146b362e3a9cbfe97b1c8e945b1cf05.bindPopup(popup_5c75a1fd385f5cfb1a18294e1546c3b0)
+        ;
+
+        
+    
+    
+                marker_d146b362e3a9cbfe97b1c8e945b1cf05.setIcon(icon_3a410135d71b83c25d37f448f253211d);
+            
+    
+            var marker_1d5ce86061b6fecc662fd90457314f73 = L.marker(
+                [-51.62, -69.22],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_e7408f218b316b1d2522ee20ca5754d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d9f687effceac593fb841c71f8d525e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75f3a434e54f5abde40ba45476874ab0 = $(`<div id="html_75f3a434e54f5abde40ba45476874ab0" style="width: 100.0%; height: 100.0%;"><b>Nodo: Rio Gallegos</b><br>Oferta Min: 31.7 W<br>Autonomia Sugerida: 5 dias<br>Estado: RIESGO_ALTO</div>`)[0];
+                popup_0d9f687effceac593fb841c71f8d525e.setContent(html_75f3a434e54f5abde40ba45476874ab0);
+            
+        
+
+        marker_1d5ce86061b6fecc662fd90457314f73.bindPopup(popup_0d9f687effceac593fb841c71f8d525e)
+        ;
+
+        
+    
+    
+                marker_1d5ce86061b6fecc662fd90457314f73.setIcon(icon_e7408f218b316b1d2522ee20ca5754d0);
+            
+    
+            var marker_c3362d4e3a6d3564c3303f14b90b9455 = L.marker(
+                [-45.87, -67.48],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_83a944caddd7833fd648aae997a9ef6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b56bea641a967561e55dfa32b2981a1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b8c5bdfaf2b9a672cfdf2419276f664 = $(`<div id="html_9b8c5bdfaf2b9a672cfdf2419276f664" style="width: 100.0%; height: 100.0%;"><b>Nodo: Comodoro Rivadavia</b><br>Oferta Min: 53.9 W<br>Autonomia Sugerida: 4 dias<br>Estado: RIESGO_ALTO</div>`)[0];
+                popup_b56bea641a967561e55dfa32b2981a1e.setContent(html_9b8c5bdfaf2b9a672cfdf2419276f664);
+            
+        
+
+        marker_c3362d4e3a6d3564c3303f14b90b9455.bindPopup(popup_b56bea641a967561e55dfa32b2981a1e)
+        ;
+
+        
+    
+    
+                marker_c3362d4e3a6d3564c3303f14b90b9455.setIcon(icon_83a944caddd7833fd648aae997a9ef6e);
+            
+    
+            var marker_77ea8832cb00003f577a6514b6091fd2 = L.marker(
+                [-54.8, -68.3],
+                {
+}
+            ).addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+    
+            var icon_3be9595ea8475dd2162b3a568dcbd783 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83c39f17045efe776436db0bc47fc08e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c88534cf4b2076a0b37b402d2b7184d = $(`<div id="html_9c88534cf4b2076a0b37b402d2b7184d" style="width: 100.0%; height: 100.0%;"><b>Nodo: Ushuaia</b><br>Oferta Min: 20.3 W<br>Autonomia Sugerida: 5 dias<br>Estado: RIESGO_ALTO</div>`)[0];
+                popup_83c39f17045efe776436db0bc47fc08e.setContent(html_9c88534cf4b2076a0b37b402d2b7184d);
+            
+        
+
+        marker_77ea8832cb00003f577a6514b6091fd2.bindPopup(popup_83c39f17045efe776436db0bc47fc08e)
+        ;
+
+        
+    
+    
+                marker_77ea8832cb00003f577a6514b6091fd2.setIcon(icon_3be9595ea8475dd2162b3a568dcbd783);
+            
+    
+            var heat_map_1cb37b6b8c8282ad96f4b45b53504496 = L.heatLayer(
+                [[-24.2, -65.3, 6.098676587180582], [-24.8, -65.4, 6.098676587180582], [-24.22, -66.32, 5.267871253226571], [-26.2, -58.2, 8.679048776254124], [-27.5, -59.0, 8.809796493700995], [-27.8, -64.3, 8.234519104084322], [-27.37, -55.9, 8.876264867743654], [-22.1, -65.6, 4.868312156175454], [-31.5, -68.5, 7.3904367748133915], [-32.9, -68.8, 7.919537499010058], [-29.41, -66.85, 7.407407407407407], [-35.47, -69.58, 9.908838684106223], [-31.4, -64.2, 8.175277959450622], [-31.6, -60.7, 9.196247930844216], [-32.95, -60.66, 9.474182851729038], [-34.6, -58.4, 10.419922892570595], [-38.0, -57.55, 11.88495364868077], [-38.0, -61.5, 11.341726210729272], [-36.62, -64.29, 10.580890911014707], [-38.95, -68.06, 11.961722488038278], [-41.13, -71.31, 17.14089818306479], [-51.62, -69.22, 30.609121518212426], [-45.87, -67.48, 18.22157434402332], [-54.8, -68.3, 47.03668861712136]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_1cb37b6b8c8282ad96f4b45b53504496.addTo(map_27037f052493981c225eeafdf10bf75b);
+        
+</script>
+</html>
